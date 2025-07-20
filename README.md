@@ -1,35 +1,54 @@
 # Parking Space Detection using YOLOv8 🚗🅿️
 
-A deep learning project using YOLOv8 to detect and classify parking spaces as empty or occupied.
+A deep learning project that detects and classifies parking spaces as empty or occupied using the YOLOv8 model trained on the PKLot dataset.
 
 ## 📂 Dataset
 
-- Dataset: [PKLot - Parking Lot Dataset](https://www.kaggle.com/datasets/ammarnassanalhajali/pklot-dataset)
-- Dataset is not included in this repo due to size.
-- You can download it from Kaggle and follow the preprocessing steps in the notebook.
+- Dataset used: [PKLot - Parking Lot Dataset](https://www.kaggle.com/datasets/ammarnassanalhajali/pklot-dataset)
+- COCO-annotated data was converted to YOLO format for model training
+- Due to size, the dataset is not included in this repository
 
-## 📊 Model Overview
+## 🧠 Model
 
-- Model: YOLOv8 (Ultralytics)
-- Classes: space, space-empty, space-occupied
-- Evaluation: Achieved high mAP and precision during training on 14K+ images
+- Model: YOLOv8n (Ultralytics 8.3.168)
+- Classes trained: `space-empty`, `space-occupied`
+- Trained on: 14,3316 instances over 2483 images
+- Training Time: ~1 hour (20 epochs on T4 GPU in Colab)
 
-## 🧪 Project Contents
+### 🧪 Performance Results
 
-- 📒 ParkingSpaceDetection.ipynb – Full training and inference workflow in Google Colab
-- 📸 output.png – Example prediction result
-- 📝 PKLot_dataset_info.txt – Info about dataset usage
+| Metric      | Value   |
+|-------------|---------|
+| Precision   | 0.998   |
+| Recall      | 0.998   |
+| mAP@0.5     | 0.994   |
+| mAP@0.5:0.95| 0.965   |
+
+## 📒 Contents
+
+| File                         | Description |
+|------------------------------|-------------|
+| ParkingSpaceDetection.ipynb  | Jupyter notebook (Colab) with full pipeline |
+| dataset.yaml                 | Dataset class and path configuration |
+| output.png                   | Sample output with bounding boxes (optional) |
+| PKLot_dataset_info.txt       | Reference to dataset source on Kaggle |
+| README.md                    | This file |
 
 ## 🚀 How to Run
 
-1. Download the PKLot dataset from Kaggle.
-2. Upload it to your Google Drive and mount it in the Colab notebook.
-3. Run the notebook step-by-step.
-4. The trained model and predictions will be stored in YOLOv8's runs directory.
+1. Clone this repo
+2. Download the PKLot dataset from Kaggle
+3. Mount your Google Drive in Colab and follow notebook instructions
+4. Run the notebook to preprocess, train, and predict
 
-## 🛠 Tech Stack
+## 🛠 Tools & Libraries
 
-- Python
-- YOLOv8
+- Python 3.11
+- YOLOv8 (Ultralytics)
 - Google Colab
-- Pycocotools, Albumentations, FiftyOne
+- COCO Format
+- OpenCV, Albumentations, FiftyOne
+
+---
+
+📌 Developed by Mohamed Fadhil Aneeq H | 2024
