@@ -24,6 +24,10 @@ A deep learning project that detects and classifies parking spaces as empty or o
 | mAP@0.5     | 0.994   |
 | mAP@0.5:0.95| 0.965   |
 
+## 📷 Sample Output
+
+![Prediction Example](image.png)
+
 ## 📒 Contents
 
 | File                         | Description |
