@@ -30,8 +30,6 @@ A deep learning project that detects and classifies parking spaces as empty or o
 |------------------------------|-------------|
 | ParkingSpaceDetection.ipynb  | Jupyter notebook (Colab) with full pipeline |
 | dataset.yaml                 | Dataset class and path configuration |
-| output.png                   | Sample output with bounding boxes (optional) |
-| PKLot_dataset_info.txt       | Reference to dataset source on Kaggle |
 | README.md                    | This file |
 
 ## 🚀 How to Run
