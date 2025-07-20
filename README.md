@@ -1,5 +1,10 @@
 # Parking Space Detection using YOLOv8 🚗🅿️
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![YOLOv8](https://img.shields.io/badge/Ultralytics-YOLOv8-green)
+![Colab](https://img.shields.io/badge/Notebook-GoogleColab-yellow)
+![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey)
+
 A deep learning project that detects and classifies parking spaces as empty or occupied using the YOLOv8 model trained on the PKLot dataset.
 
 ## 📂 Dataset
