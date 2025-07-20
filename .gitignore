@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+# Environment
+.env
+.venv/
+env/
+venv/
+*.env
+
+# Mac & Linux
+.DS_Store
+
+# Model weights
+*.pt
+*.pkl
+
+# Large datasets or folders
+dataset/
+runs/
